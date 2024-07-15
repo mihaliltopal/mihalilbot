@@ -4,7 +4,7 @@ module.exports = async (req, res) => {
   if (req.method === 'POST') {
     const { name, email } = req.body;
     const message = `New form submission:\nName: ${name}\nEmail: ${email}`;
-    
+
     const telegramToken = process.env.TELEGRAM_BOT_TOKEN;
     const chatId = process.env.TELEGRAM_CHAT_ID;
 
